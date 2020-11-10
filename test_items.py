@@ -10,10 +10,7 @@ class TestMainPage():
         
         elem = browser.find_element_by_css_selector(".btn-add-to-basket")
         
-        
         exp_type = "submit"
         elem_type = elem.get_attribute("type")    
         assert elem_type == exp_type, f"Wrong element type: expected '{exp_type}' got '{elem_type}'"
-        
-        
-            
+
